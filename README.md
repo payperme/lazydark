@@ -22,4 +22,22 @@ sudo apt update
 sudo apt install python3-bs4 python3-pymongo python3-requests mongodb-org-server mongosh
 sudo systemctl start mongod.service
 ```
+For macOS 12+ (m1 chip)
+```
+xcode-select --install
+brew tap mongodb/brew
+brew install mongodb-community@7.0
+brew services start mongodb-community@7.0
+```
+
+## Usage
+
+Easy to use:
+
+```
+python3 lazydark.py --help
+python3 lazydark -u payperme.com
+python3 lazydark -s payperme
+python3 lazydark -d 6643a903a60e33b7c9daa82e
+```
 
