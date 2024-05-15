@@ -29,6 +29,15 @@ brew tap mongodb/brew
 brew install mongodb-community@7.0
 brew services start mongodb-community@7.0
 ```
+Now we need to create a virtual environment in macOS
+```
+brew install python3-venv
+cd /path/to/your/project/directory
+python3 -m venv myenv
+source myenv/bin/activate
+pip3 install bs4 pymongo requests
+```
+
 
 ## Usage
 
